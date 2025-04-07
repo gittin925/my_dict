@@ -40,7 +40,7 @@ else:
             if username in users and users[username] == hash_password(password):
                 st.session_state.username = username
                 st.success("ログイン成功！")
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("ユーザー名またはパスワードが間違っています。")
 
