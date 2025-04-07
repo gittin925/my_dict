@@ -29,7 +29,7 @@ if st.session_state.username:
     st.success(f"ログイン中: {st.session_state.username}")
     if st.button("ログアウト"):
         st.session_state.username = None
-        st.experimental_rerun()
+        st.rerun()
 else:
     tab1, tab2 = st.tabs(["ログイン", "新規登録"])
 
